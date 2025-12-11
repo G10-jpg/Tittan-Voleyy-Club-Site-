@@ -1,0 +1,174 @@
+/* ======== ESTILO GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0d0b12;
+    color: white;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+    background: #4b007d;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #8a2be2;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #8a2be2;
+}
+
+/* ======== CAPA (HERO) ======== */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(#4b007d, #0d0b12);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: #8a2be2;
+    padding: 12px 22px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #a66bff;
+}
+
+/* ======== SOBRE ======== */
+.sobre {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ======== CARDS ======== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1525;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #4b007d;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #8a2be2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn-card:hover {
+    background: #a66bff;
+}
+
+/* ======== FORMULÁRIOS (usado em coach, inscrição e teste) ======== */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #1a1525;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #4b007d;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2c223b;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #8a2be2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a66bff;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4b007d;
+    margin-top: 40px;
+    border-top: 3px solid #8a2be2;
+}
