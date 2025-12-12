@@ -3,147 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tittan Volleyy Club</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0d0d0d;
-            color: white;
-        }
-
-        header {
-            background: linear-gradient(90deg, #6a0dad, #000000);
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 40px;
-            margin: 0;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            background: #111;
-            padding: 15px 0;
-        }
-
-        nav a {
-            color: #c08aff;
-            font-size: 18px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .card {
-            background: #1a1a1a;
-            border: 2px solid #6a0dad;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            color: #c08aff;
-            margin-top: 0;
-        }
-
-        .coach-card {
-            background: #111;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #6a0dad;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background: #000;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #aaa;
-        }
-    </style>
+    <title>Tittan Volley Club - Site Oficial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Tittan Volleyy Club</h1>
+    <header class="header">
+        <h1>TITTAN VOLLEY CLUB</h1>
+        <p>Site Oficial do Time</p>
     </header>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#coachs">Coachs</a>
-        <a href="#teste">Teste para Coach</a>
-        <a href="#contato">Contato</a>
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="pages/sobre.html">Sobre</a>
+        <a href="pages/coach.html">Coachs</a>
+        <a href="pages/teste.html">Teste</a>
+        <a href="pages/jogadores.html">Jogadores</a>
+        <a href="pages/calendario.html">Calendário</a>
+        <a href="pages/regras.html">Regras</a>
+        <a href="pages/contato.html">Contato</a>
     </nav>
 
-    <div class="container">
+    <section class="home-section">
+        <h2>🏐 Bem-vindo ao Tittan Volley Club</h2>
+        <p>O time oficial do Roblox com foco em evolução, disciplina e treino sério.</p>
 
-        <div class="card" id="sobre">
-            <h2>🏐 Sobre o Time</h2>
-            <p>O Tittan Volleyy Club é um time competitivo focado em evolução, disciplina e trabalho em equipe. Nosso objetivo é crescer, treinar forte e elevar o nível de todos os jogadores.</p>
+        <div class="home-box">
+            <h3>📢 Recrutamento de Coachs Aberto!</h3>
+            <p>
+                Estamos oficialmente buscando coachs experientes para guiar nossos atletas.
+                Acesse a aba <strong>Coachs</strong> ou faça o <strong>Teste</strong>.
+            </p>
+            <a class="btn" href="pages/teste.html">Fazer o Teste</a>
         </div>
+    </section>
 
-        <div class="card" id="coachs">
-            <h2>🎯 Coachs Disponíveis</h2>
-
-            <div class="coach-card">
-                <h3>📌 Coach Leo</h3>
-                <p>Especialista em posicionamento, defesa e leitura de jogo.</p>
-            </div>
-
-            <div class="coach-card">
-                <h3>📌 Coach Bryan</h3>
-                <p>Focado em ataque, saque e coordenação de jogadas.</p>
-            </div>
-
-            <div class="coach-card">
-                <h3>📌 Coach Pedro</h3>
-                <p>Treina comunicação, estratégia e entrosamento.</p>
-            </div>
-
-        </div>
-
-        <div class="card" id="teste">
-            <h2>📝 Teste para virar Coach</h2>
-            <p>Preencha as perguntas abaixo e envie para nosso Discord:</p>
-
-            <ul>
-                <li>1️⃣ Quanto tempo você tem de experiência com vôlei?</li>
-                <li>2️⃣ Qual área você deseja treinar (ataque, defesa, estratégia)?</li>
-                <li>3️⃣ Consegue fazer treinos semanais?</li>
-                <li>4️⃣ Fale sua maior habilidade no vôlei.</li>
-                <li>5️⃣ Por que você quer ser coach do Tittan Volleyy Club?</li>
-            </ul>
-        </div>
-
-        <div class="card" id="contato">
-            <h2>📬 Contato</h2>
-            <p>Entre no nosso Discord para participar do time e enviar o teste:</p>
-            <p><strong>🔗 discord.gg/SEULINKAQUI</strong></p>
-        </div>
-
-    </div>
-
-    <footer>
-        Tittan Volleyy Club © 2025 – Todos os direitos reservados.
+    <footer class="footer">
+        <p>© 2025 Tittan Volley Club • Todos os direitos reservados.</p>
     </footer>
 
 </body>
