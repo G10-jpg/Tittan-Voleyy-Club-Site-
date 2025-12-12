@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tittan Volley Club - Site Oficial</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tittan Volley Club – Coaches</title>
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- Ícone do site -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/889/889590.png">
+</head>
 <body>
 
-    <header class="header">
-        <h1>TITTAN VOLLEY CLUB</h1>
-        <p>Site Oficial do Time</p>
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <div class="logo">Tittan Volley Club</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <nav class="navbar">
+            <ul id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#coaches">Coaches</a></li>
+                <li><a href="#testes">Testes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="menu">
-        <a href="index.html">Início</a>
-        <a href="pages/sobre.html">Sobre</a>
-        <a href="pages/coach.html">Coachs</a>
-        <a href="pages/teste.html">Teste</a>
-        <a href="pages/jogadores.html">Jogadores</a>
-        <a href="pages/calendario.html">Calendário</a>
-        <a href="pages/regras.html">Regras</a>
-        <a href="pages/contato.html">Contato</a>
-    </nav>
-
-    <section class="home-section">
-        <h2>🏐 Bem-vindo ao Tittan Volley Club</h2>
-        <p>O time oficial do Roblox com foco em evolução, disciplina e treino sério.</p>
-
-        <div class="home-box">
-            <h3>📢 Recrutamento de Coachs Aberto!</h3>
-            <p>
-                Estamos oficialmente buscando coachs experientes para guiar nossos atletas.
-                Acesse a aba <strong>Coachs</strong> ou faça o <strong>Teste</strong>.
-            </p>
-            <a class="btn" href="pages/teste.html">Fazer o Teste</a>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Procure Aqui o Novo Coach do Seu Time</h1>
+            <p>O Tittan Volley Club está recrutando o melhor coach para liderar o time!</p>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2025 Tittan Volley Club • Todos os direitos reservados.</p>
-    </footer>
+    <!-- ================= CARDS COACHES ================= -->
+    <section class="cards" id="coaches">
+        <div class="card">
+            <h2>Coach Daniel</h2>
+            <p>Especialista em táticas ofensivas e análise de jogadores.</p>
+            <button onclick="location.href='#testes'">Aplicar Teste</button>
+        </div>
 
+        <div class="card">
+            <h2>Coach Marina</h2>
+            <p>Focada em defesa e desenvolvimento de talentos.</p>
+            <button onclick="location.href='#testes'">Aplicar Teste</button>
+        </div>
+
+        <div class="card">
+            <h2>Coach Felipe</h2>
+            <p>Treina condicionamento físico e estratégias avançadas.</p>
+            <button onclick="location.href='#testes'">Aplicar Teste</button>
+        </div>
+    </section>
+
+    <!-- ================= TESTE PARA COACH ================= -->
+    <section class="contact" id="testes">
+        <h2>Aplicar Teste de Coach</h2>
+        <form id="testeForm">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="text" placeholder="Por que você deveria ser coach?" required>
+            <textarea placeholder="Conte sobre sua experiência" rows="5" required></textarea>
+            <button type="submit">Enviar Teste</button>
+        </form>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="contact" id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="backToTop" onclick="topFunction()">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
